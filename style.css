@@ -1,0 +1,50 @@
+:root {
+    /* Palet Warna Soft */
+    --bg-color: #FDFBF7;        /* Cream White (Background utama) */
+    --primary: #88B04B;         /* Sage Green (Tombol/Aksen - Soft Nature) */
+    --secondary: #92A8D1;       /* Serenity Blue (Chat Bubble Teman) */
+    --accent: #F7CAC9;          /* Rose Quartz (Highlight) */
+    --text-dark: #4A4A4A;       /* Abu tua (Bukan hitam pekat agar tidak tajam) */
+    --white: #ffffff;
+    --shadow: 0 4px 15px rgba(0,0,0,0.05); /* Bayangan halus */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Font modern */
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* Card Style (Kotak Grup) */
+.group-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.group-card:hover {
+    transform: translateY(-5px); /* Efek melayang saat di-hover */
+}
+
+/* Chat Bubble Sendiri */
+.message-me {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 15px;
+    align-self: flex-end;
+    margin: 5px;
+}
+
+/* Chat Bubble Teman */
+.message-other {
+    background-color: var(--secondary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px 15px 15px 0;
+    align-self: flex-start;
+    margin: 5px;
+}
